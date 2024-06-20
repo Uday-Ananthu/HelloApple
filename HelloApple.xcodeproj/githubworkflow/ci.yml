@@ -1,0 +1,16 @@
+name: "Build iOS app"
+
+on:
+  push:
+    branch: master
+
+jobs:
+  build:
+    name: Build iOS 
+    runs-on: macos-latest
+    steps: 
+      - name: checkout source code
+        uses: actions/checkout@v2
+
+      - name: Build and archive
+        run:  xcodebuild -workspace -list
