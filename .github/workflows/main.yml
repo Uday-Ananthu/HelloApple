@@ -15,5 +15,5 @@ jobs:
       - name: Build and archive
         run:  |
           xcodebuild -workspace HelloApple.xcodeproj/project.xcworkspace -list
-          xcodebuild -workspace HelloApple.xcodeproj/project.xcworkspace -scheme HelloApple
+          xcodebuild -workspace HelloApple.xcodeproj/project.xcworkspace -scheme HelloApple -allowProvisioningUpdates 
         
