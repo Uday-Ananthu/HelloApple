@@ -12,9 +12,6 @@ jobs:
       - name: checkout source code
         uses: actions/checkout@v2
 
-      - name: install dependencies
-        run: brew bundle install
-
       - name: Build and archive
         run: xcodebuild -scheme "debug" \
           -archivePath $RUNNER_TEMP/iamgroot.xcarchive \
