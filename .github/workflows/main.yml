@@ -13,4 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build and archive
-        run:  xcodebuild -workspace HelloApple.xcodeproj/project.xcworkspace -list
+        run:  |
+          xcodebuild -workspace HelloApple.xcodeproj/project.xcworkspace -list
+          xcodebuild -workspace HelloApple.xcodeproj/project.xcworkspace -scheme HelloApple
+        
